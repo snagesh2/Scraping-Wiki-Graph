@@ -1,0 +1,11 @@
+#!/Users/snagesh2/PycharmProjects/Assignment2.0/src/API/flask/bin/python
+
+# -*- coding: utf-8 -*-
+import re
+import sys
+
+from flask.cli import main
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
